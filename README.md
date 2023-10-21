@@ -1,0 +1,2 @@
+# DL_Insightface_ActorRecognition
+深度学习实验项目，基于insightface的视频演员识别
