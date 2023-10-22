@@ -6,7 +6,6 @@ import insightface
 from insightface.app import FaceAnalysis
 from insightface.data import get_image as ins_get_image
 
-assert insightface.__version__ >= '0.3'
 
 parser = argparse.ArgumentParser(description='insightface app test')
 # general
