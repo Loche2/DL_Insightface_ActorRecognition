@@ -13,7 +13,7 @@ app.prepare(ctx_id=0, det_size=(640, 640))
 
 
 def get_face_db_features():
-    face_db_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'face_db')
+    face_db_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'face_db/TBBT')
     img_gen = glob.glob(face_db_dir + '/*')
     args = argparse.Namespace()
     assert len(img_gen) != 0, '人脸库图片数量为0'
@@ -68,7 +68,7 @@ def recognize(image):
 
 
 if __name__ == '__main__':
-    cap = cv2.VideoCapture('TBBT.S12E24.mp4')
+    cap = cv2.VideoCapture('video/TBBT.S12E24.mp4')
     while True:
         # print('cap',cap.read()[1])
         # print('ins',ins_get_image('tbbt'))
